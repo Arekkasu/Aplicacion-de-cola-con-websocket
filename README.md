@@ -22,7 +22,8 @@ npm start
 Un websocket es un puerto establecido para la comunicacion directa con el servidor sin necesidad de peticiones HTTP. Principalmente usado en cuestiones de tiempo real. como puede ser un chat o la carga de datos al tiempo o hacer un directo
 
 
-![[websocket.png]]
+![image](https://github.com/user-attachments/assets/f2351e20-d1c1-4d09-8781-dd26e538c8a0)
+
 
 ### Como se maneja?
 Al estar conectados se termina estableciendo como un punto de conexion de webSocket
