@@ -18,3 +18,26 @@ npm start
 ```
 
 
+### Que es un web Socket
+Un websocket es un puerto establecido para la comunicacion directa con el servidor sin necesidad de peticiones HTTP. Principalmente usado en cuestiones de tiempo real. como puede ser un chat o la carga de datos al tiempo o hacer un directo
+
+
+![[websocket.png]]
+
+### Como se maneja?
+Al estar conectados se termina estableciendo como un punto de conexion de webSocket
+este tiene Tres estas
+1. On
+2. Message
+3. close
+por lo que se manejan todas las peticiones desde un mismo canal y no por ruta como
+ws://server/get o ws://server/post, no, esto se deben ser manejados por los clientes que esten conectados al websocket y por el payload. Lo mejor es que estos se identifiquen por un type en el payload
+```json
+{
+	"payload": {
+		"type": "peticion"
+		"data": // Segun la logica del programa
+	}
+}
+```
+haciendo que este verifique los types para que trabajen y la respuesta se adecue en el cliente
